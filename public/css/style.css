@@ -24,8 +24,8 @@ button {
 
 .swiper-container .swiper-button-next,
 .swiper-container .swiper-button-prev {
-  color: #000;
-  opacity: 0.3;
+  color: #c5aa76;
+  opacity: 0.5;
 }
 
 .swiper-container .swiper-pagination {
@@ -92,6 +92,10 @@ button {
 
 .more:hover img {
   margin-left: 10px;
+}
+
+main {
+  width: 100%;
 }
 
 .menu {
@@ -174,7 +178,7 @@ button {
 
 header {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   top: 0;
   left: 0;
   z-index: 5;
@@ -210,7 +214,7 @@ header .right a img {
 
 #banner {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
 }
 
@@ -218,7 +222,7 @@ header .right a img {
   position: relative;
 }
 
-#banner .swiper-slide img {
+#banner .swiper-slide img, #banner .swiper-slide video {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -226,14 +230,8 @@ header .right a img {
      object-fit: cover;
 }
 
-#banner .swiper-slide img.mobile-slider {
+#banner .swiper-slide img.mobile-slider, #banner .swiper-slide video.mobile-slider {
   display: none;
-}
-
-#banner .swiper-button-next,
-#banner .swiper-button-prev {
-  color: #000;
-  opacity: 0.3;
 }
 
 #banner .swiper-pagination {
@@ -274,7 +272,7 @@ header .right a img {
 }
 
 .dealer {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
 }
 
@@ -284,6 +282,8 @@ header .right a img {
 
 .dealer .dealer-pic {
   padding: 0;
+  width: 43vw;
+  height: 100vh;
 }
 
 .dealer .dealer-pic #dealer {
@@ -355,6 +355,10 @@ header .right a img {
   bottom: 25%;
 }
 
+.product {
+  width: 100vw;
+}
+
 .product #product-pic {
   width: 43vw;
   height: 100%;
@@ -381,6 +385,9 @@ header .right a img {
   width: 57vw;
   padding: 80px;
   position: relative;
+  -ms-flex: 1;
+  -webkit-box-flex: 1;
+          flex: 1;
 }
 
 .product .product-card .common-title {
@@ -457,6 +464,10 @@ header .right a img {
   position: static;
   float: right;
   margin-top: 50px;
+}
+
+footer {
+  width: 100vw;
 }
 
 footer .bg-style .bg {
