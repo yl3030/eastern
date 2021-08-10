@@ -287,8 +287,8 @@ header .right a img {
 }
 
 .dealer .dealer-pic #dealer {
-  width: 43vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 
 .dealer .dealer-pic #dealer .swiper-slide {
@@ -586,7 +586,7 @@ footer .content .copyright {
 }
 
 @media screen and (max-width: 1024px) {
-  .dealer .dealer-pic #dealer {
+  .dealer .dealer-pic {
     width: 50vw;
   }
   .dealer .dealer-text {
@@ -637,7 +637,7 @@ footer .content .copyright {
   .dealer .mobile-style {
     display: block;
   }
-  .dealer .dealer-pic #dealer {
+  .dealer .dealer-pic {
     width: 100vw;
     height: 100vw;
   }

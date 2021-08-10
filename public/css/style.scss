@@ -258,10 +258,11 @@ header {
   .dealer-pic {
     padding: 0;
     width: 43vw;
+      // height: 100vh;
       height: 100vh;
     #dealer {
-      width: 43vw;
-      height: 100vh;
+      width: 100%;
+      height: 100%;
       .swiper-slide {
         position: relative;
         img {
@@ -542,8 +543,9 @@ footer {
     .dealer {
         
         .dealer-pic {
+          width: 50vw;
             #dealer {
-                width: 50vw;
+                // width: 50vw;
             }
         } 
         .dealer-text {
@@ -616,9 +618,9 @@ footer {
       display: block;
     }
     .dealer-pic {
+      width: 100vw;
+      height: 100vw;
       #dealer {
-        width: 100vw;
-        height: 100vw;
         .swiper-slide {
           img {
             top: 0;
