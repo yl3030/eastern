@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>東森｜關於東森</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+  </head>
+  <body>
+    <div class="menu">
+      <img class="logo" src="./public/img/logo.png" alt="" />
+      <ul class="content">
+        <li class="item">
+          <h5 class="menu-title"><a>走進新連鎖</a></h5>
+          <ul>
+            <li><a href="#">關於東森</a></li>
+            <li><a href="#">認識新連鎖</a></li>
+            <li><a href="#">卓越領導團隊</a></li>
+            <li><a href="#">專家顧問群</a></li>
+            <li><a href="#">社會公益</a></li>
+          </ul>
+        </li>
+        <li class="item">
+          <h5 class="menu-title"><a href="#">最新消息</a></h5>
+        </li>
+        <li class="item">
+          <h5 class="menu-title"><a>商品情報</a></h5>
+          <ul>
+            <li><a href="#">保健</a></li>
+            <li><a href="#">家用品</a></li>
+            <li><a href="#">美容保養</a></li>
+          </ul>
+        </li>
+        <li class="item">
+          <h5 class="menu-title"><a>成功故事</a></h5>
+          <ul>
+            <li><a href="#">皇冠級經銷商</a></li>
+            <li><a href="#">鑽石級經銷商</a></li>
+          </ul>
+        </li>
+        <li class="item">
+          <h5 class="menu-title"><a>精彩影音</a></h5>
+          <ul>
+            <li><a href="#">影片欣賞</a></li>
+            <li><a href="#">相簿特輯</a></li>
+          </ul>
+        </li>
+        <li class="item">
+          <h5 class="menu-title"><a href="#">問答集</a></h5>
+        </li>
+        <li class="item">
+          <h5 class="menu-title"><a href="#">全球據點</a></h5>
+        </li>
+        <li class="item">
+          <h5 class="menu-title"><a href="#">會員登入</a></h5>
+        </li>
+      </ul>
+      <button class="lang py-2">
+        <div class="choose-box">
+          <div class="inner">
+            <img class="globe" src="./public/img/globe_icon.svg" alt="" />
+            <div class="d-inline-flex align-items-center">
+              <span class="active choose-tab">TW</span>
+              <div class="d-inline-flex align-items-center me-2">
+                <span class="mx-1">|</span><span class="choose-tab">CN</span>
+                <span class="mx-1">|</span><span class="choose-tab">EN</span>
+                <span class="mx-1">|</span><span class="choose-tab">VN</span>
+                <span class="mx-1">|</span><span class="choose-tab">HK</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="arrow">
+          <img src="./public/img/right_chevron_icon.svg" alt="" />
+        </div>
+      </button>
+    </div>
+    <header class="d-flex justify-content-between">
+      <div class="left">
+        <a href="./index.html"
+          ><img class="logo" src="./public/img/logo.png" alt="東森"
+        /></a>
+        <div class="menu-icon">
+          <img src="./public/img/menu_icon.svg" alt="" />
+        </div>
+      </div>
+      <div class="right">
+        <a href="#"><img src="./public/img/user_icon.svg" alt="" /></a>
+        <a class="search-box">
+          <div class="inner">
+            <form action=""><input type="text" placeholder="Search" /></form>
+          </div>
+          <img class="search-btn" src="./public/img/search_icon.svg" alt="" />
+        </a>
+        <a href="#"><img src="./public/img/map_pin_icon.svg" alt="" /></a>
+      </div>
+    </header>
+    <main>
+      <h1 class="page-title">走進新連鎖</h1>
+      <nav class="page-nav">
+        <ul>
+          <li class="active"><a href="#">關於東森</a></li>
+          <li><a href="#">認識新連鎖</a></li>
+          <li><a href="#">卓越領導團隊</a></li>
+          <li><a href="#">專家顧問群</a></li>
+          <li><a href="#">社會公益</a></li>
+        </ul>
+      </nav>
+      <ul class="nav nav-tabs page-tab" id="aboutTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="idea-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#idea"
+            type="button"
+            role="tab"
+            aria-controls="idea"
+            aria-selected="true"
+          >
+            經營理念
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="hope-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#hope"
+            type="button"
+            role="tab"
+            aria-controls="hope"
+            aria-selected="false"
+          >
+            我們的願景
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="group-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#group"
+            type="button"
+            role="tab"
+            aria-controls="group"
+            aria-selected="false"
+          >
+            集團組織
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="history-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#history"
+            type="button"
+            role="tab"
+            aria-controls="history"
+            aria-selected="false"
+          >
+            大事紀要
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="honor-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#honor"
+            type="button"
+            role="tab"
+            aria-controls="honor"
+            aria-selected="false"
+          >
+            榮耀與肯定
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="aboutTabContent">
+        <!-- 經營理念 -->
+        <div
+          class="tab-pane fade show active"
+          id="idea"
+          role="tabpanel"
+          aria-labelledby="idea-tab"
+        >
+          <div
+            class="
+              dealer
+              d-flex
+              flex-wrap
+              justify-content-between
+              align-items-end
+            "
+          >
+            <img
+              class="mobile-style w-100"
+              src="./public/img/dealer-style2.png"
+              alt=""
+            />
+            <div class="position-relative dealer-pic">
+              <div class="dealer-pic_inner">
+                <img src="./public/img/group_pic_1.png" alt="" />
+              </div>
+              <div class="dealer-intro">
+                <div class="name-box">
+                  <!-- <p class="title">創辦人的話</p> -->
+                  <p class="name">創辦人的話</p>
+                </div>
+              </div>
+            </div>
+            <div class="dealer-text position-relative">
+              <div class="text">
+                <h2 class="common-title">
+                  讓「東森」兩個字<br />
+                  成為一項保證
+                </h2>
+                <p class="common-text">
+                  管理只要把事情做好，領導則是要作對的事。<br />
+                  面對行動Mobile、網路與AI人工智慧的新世紀，<br />
+                  我總是不斷思索，東森的下一個成長策略是什麼？
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-text container mb-5">
+            <p>
+              墊高看未來的角度，市場擴大了，視野也改變了，現有的思維與策略都面臨調整，但機會和發展空間也無限延伸，就看我們是否有能力和膽識去迎接挑戰。
+            </p>
+            <p>
+              未來，我們要為臺灣、為兩岸的影視新媒體及零售事業，創造新市場、新通路和新契機，不只做到最大，更要做到最好!
+              讓「東森」兩個字成為一項保證，為客戶、供應商、合作夥伴和廣大消費者，打造共利、共享、共好的幸福指標產業。
+              因為，這是大家的東森。
+            </p>
+            <h3>經營理念</h3>
+            <h4>堅持顧客導向「東森嚴選」就是品質保證</h4>
+            <p>
+              東森從港埠倉儲事業起家，再積極轉型，逐步跨入頻道經營、媒體產業和虛擬通路的零售市場。一路走來，東森總能洞燭機先，從核心產業出發，尋找下一波成長的新動能。
+            </p>
+            <p>
+              經由全通路的行銷渠道，東森為臺灣無店舖零售流通業立下一個嶄新典範。「東森嚴選」是東森購物的核心價值，也落實在每一個環節的企業文化中。從前端的商品開發、品質管控、節目製作、客戶服務、金流安全到後端的物流配送，層層管控，用心把關，對消費者負責。準此，「東森嚴選」下的每件商品，都要通過70項品管檢核，歷來消費者滿意度都在95％之上。
+            </p>
+            <p>
+              未來的經濟是利他主義的經濟，「東森嚴選」正是東森對每一位消費者的「承諾、責任、榮譽」，也讓「東森」兩個字成為一項保證。
+            </p>
+            <p>
+              品牌力與好感度是東森最大的資產，未來將繼續堅持「東森嚴選」精神，以客為尊，提供高品質的商品與服務，為顧客創造全新價值，也為企業的發展找到永續的未來。
+            </p>
+            <img
+              class="d-block w-85px float-end"
+              src="./public/img/seal.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- 經營理念 end -->
+
+        <!-- 我們的願景 -->
+        <div
+          class="tab-pane fade"
+          id="hope"
+          role="tabpanel"
+          aria-labelledby="hope-tab"
+        >
+          <div class="page-banner">
+            <div class="page-banner_inner">
+              <div class="container">
+                <div class="page-banner_content">
+                  <img src="./public/img/aboout_pic_1.png" alt="" />
+                  <h2>
+                    創新企業價值<br />
+                    打造兩岸幸福指標產業
+                  </h2>
+                  <p>
+                    面對國內外產業結構與經濟環境的巨變，東森自1990開始積極轉型，結合大數據、社群及會員精準行銷等創新思維，串連智慧科技生活服務及新媒體兩大新事業發展。以垂直整合、全通路及多角化經營發展為核心，為企業注入新的活力與競爭力，也成功的再造品牌生命力。
+                  </p>
+                  <p>
+                    從倉儲起家到航港貿一條龍的國際物流中心；從傳統儲運業到新興媒體產業；從虛擬購物通路到帶動一場全通路的科技零售消費革命，東森總能在關鍵時刻不斷的開疆闢土，大膽布局，將危機化為轉機，將轉機創造成商機。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-text container">
+            <h3>創造願景 贏在未來</h3>
+            <p>
+              東森不斷的尋找創新思維的成長引擎，以精準的眼光，用創新的科技，並且堅毅的驅動願景的實現
+            </p>
+            <h4>兩岸智慧科技生活服務事業的創新營運者</h4>
+            <p>
+              因應大陸十三五計畫維持經濟中高速增長的發展政策，東森將以在臺經營十多年多通路零售事業的成功經驗為基礎，橋接大陸虛擬及實體零售發展，以全通路與自營商品等多管齊下模式，進入龐大的大陸零售市場。
+            </p>
+            <p>
+              東森有信心以創新營運模式銜接兩岸科技零售生活服務產業，再從兩岸為起點跨境東協市場，進而邁向全世界。
+            </p>
+            <h4>兩岸新媒體事業的創新領航者</h4>
+            <p>
+              東森過去25年來為臺灣地區有線電視多系統經營者(MSO)，並在衛星電視頻道、電視購物、網路購物、網路媒體等媒體領域，建立起良好的口碑與信譽。以臺灣媒體經營的成功經驗為起點，未來十年，東森將積極拓展新媒體事業的經營版圖，冀望成為創新優質的全球華人新媒體事業領航者。
+            </p>
+            <h3>創新價值 永續經營</h3>
+            <h4>東森正努力創新價值，衝出夢想</h4>
+            <p>
+              運籌帷幄，決勝千里。21世紀的第二個十年，是亞洲重返世界中心的新起點，是中國大陸超越美國成為世界第一大經濟體的關鍵年代，也是東森深耕兩岸，向世界出發的致勝契機。東森正努力創新價值，衝出夢想，成為打造幸福產業發展的新指標。
+            </p>
+            <img class="w-100" src="./public/img/aboout_pic_2.png" alt="" />
+          </div>
+        </div>
+        <!-- 我們的願景 end -->
+
+        <!-- 集團組織 -->
+        <div
+          class="tab-pane fade"
+          id="group"
+          role="tabpanel"
+          aria-labelledby="group-tab"
+        >
+          <div class="container">
+            <img
+              class="w-100 mb-5"
+              src="./public/img/aboout_pic_3.png"
+              alt=""
+            />
+            <div class="row pb-80px">
+              <div class="col-sm-6 mb-4">
+                <div class="group-box">
+                  <h4>東森國際股份有限公司</h4>
+                  <h5>Eastern Media International Corporation</h5>
+                  <ul>
+                    <li>+886 2 2755 7565</li>
+                    <li>台北市大安區復興南路一段368號8樓</li>
+                    <li>www.emic.com.tw</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6 mb-4">
+                <div class="group-box">
+                  <h4>墨攻網路科技股份有限公司</h4>
+                  <h5>Mohist Web Technology Co.,Ltd</h5>
+                  <ul>
+                    <li>+886 2 2748 3899</li>
+                    <li>台北市松山區南京東路五段343號4樓之3</li>
+                    <li>www.mohist.com.tw</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6 mb-4">
+                <div class="group-box">
+                  <h4>東森得易購股份有限公司</h4>
+                  <h5>Eastern Home Shopping & Leisure Co., Ltd</h5>
+                  <ul>
+                    <li>+886 2 2943 7888</li>
+                    <li>新北市中和區景平路258號1樓</li>
+                    <li>www.ehsn.com.tw</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6 mb-4">
+                <div class="group-box">
+                  <h4>東森全球新連鎖事業</h4>
+                  <h5>Eastern Tenmax Global Network Marketing</h5>
+                  <ul>
+                    <li>+886 2 2943 7888</li>
+                    <li>新北市中和區景平路258號1樓</li>
+                    <li>www.eud.com.tw</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6 mb-4">
+                <div class="group-box">
+                  <h4>東森新媒體控股股份有限公司</h4>
+                  <h5>ETtoday Co., Ltd</h5>
+                  <h4>東森寵物雲股份有限公司</h4>
+                  <h5>ETtoday Pets</h5>
+                  <ul>
+                    <li>+886 2 5555 6366</li>
+                    <li>台北市南港區重陽路72號</li>
+                    <li>www.ettoday.net/pets.ettoday.net/</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6 mb-4">
+                <div class="group-box">
+                  <h4>東森旅行社股份有限公司</h4>
+                  <h5>DONG-SEN TRAVEL CO.,LTD.</h5>
+                  <ul>
+                    <li>+886 2 7737 1788</li>
+                    <li>台北市中山區長安東路二段198號2樓</li>
+                    <li>www.Etholiday.com</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6 mb-4">
+                <div class="group-box">
+                  <h4>東森人身保險代理人股份有限公司</h4>
+                  <h5>Eastern Life Insurance Agency Co., Ltd</h5>
+                  <ul>
+                    <li>+886 2 7726 3888</li>
+                    <li>台北市中正區忠孝西路一段6號14樓</li>
+                    <li>www.etlife.com.tw</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6 mb-4">
+                <div class="group-box">
+                  <h4>東森房屋股份有限公司</h4>
+                  <h5>Eastern Real Estate Management., Ltd</h5>
+                  <ul>
+                    <li>+886 2 5559 0688</li>
+                    <li>台北市中正區館前路42號5樓</li>
+                    <li>www.etwarm.com.tw</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6 mb-4">
+                <div class="group-box">
+                  <h4>香港草莓網</h4>
+                  <h5>Strawberrynet</h5>
+                  <ul>
+                    <li>+852 3516 8719</li>
+                    <li>香港筲箕灣亞公岩村道4號 草莓大樓</li>
+                    <li>tw.strawberrynet.com</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6 mb-4">
+                <div class="group-box">
+                  <h4>東森蝶蒙股份有限公司</h4>
+                  <h5>EASTERN DE MON CO.,LTD.</h5>
+                  <ul>
+                    <li>+886 2 2943 7888</li>
+                    <li>新北市中和區景平路258號1樓</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 集團組織 end -->
+
+        <!-- 大事紀要 -->
+        <div
+          class="tab-pane fade"
+          id="history"
+          role="tabpanel"
+          aria-labelledby="history-tab"
+        >
+          <div class="page-banner">
+            <div class="page-banner_inner">
+              <div class="container">
+                <div class="page-banner_content">
+                  <img src="./public/img/aboout_pic_4.png" alt="" />
+                  <h2>東森集團 發展歷程</h2>
+                  <p>
+                    東森是一個走在未來的團隊，總是不斷挑戰新舞台，打造新目標，也總能一次次掌握趨勢，創新價值，爲企業的發展找到永續的未來。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container history-box py-80px">
+            <div class="year-box">
+              <div class="year-content">
+                <h3>2020</h3>
+                <ul>
+                  <li>日本宮崎電視台簽約合作</li>
+                  <li>東森攜手華碩成立AI研發中心簽署MOU</li>
+                </ul>
+              </div>
+              <div class="dot-box">
+                <div class="dot rounded-circle"></div>
+                <div class="line"></div>
+              </div>
+              <div class="year-content opacity-0"></div>
+            </div>
+            <div class="year-box">
+              <div class="year-content opacity-0"></div>
+              <div class="dot-box">
+                <div class="dot rounded-circle"></div>
+                <div class="line"></div>
+              </div>
+              <div class="year-content">
+                <h3>2019</h3>
+                <ul>
+                  <li>投資大樓電梯媒體分眾傳媒</li>
+                  <li>
+                    東森新聞雲股份有限公司更名為東森新媒體控股股份有限公司
+                    投資大樓電梯媒體分眾傳媒U
+                  </li>
+                  <li>加入OVO串流電視平台</li>
+                  <li>投資大樓電梯媒體分眾傳媒</li>
+                  <li>加入北科大產學聯盟</li>
+                  <li>成立Her和她女性電商平台</li>
+                  <li>「聲林之王」榮獲第54屆電視金鐘獎「綜藝節目獎」</li>
+                  <li>東森購物楊俊元執行長獲選台灣百大經理人MVP。</li>
+                  <li>與世新、南華大學簽訂產學合作協定</li>
+                  <li>
+                    東森寵物雲商店門市數近百家 全台第一與北醫大數據中心合作。
+                  </li>
+                  <li>宣佈林口總部計劃啟動。</li>
+                </ul>
+              </div>
+            </div>
+            <div class="year-box">
+                <div class="year-content">
+                  <h3>2018</h3>
+                  <ul>
+                    <li>併購香港草莓網，開拓全球電商版圖與伊林娛樂合作，成立美妝商品公司伊森ESEN</li>
+                    <li>併購美容SPA知名國際品牌自然美跨足直銷事業，成立東森天美仕全球新連鎖事業</li>
+                  </ul>
+                </div>
+                <div class="dot-box">
+                  <div class="dot rounded-circle"></div>
+                  <div class="line"></div>
+                </div>
+                <div class="year-content opacity-0"></div>
+              </div>
+          </div>
+        </div>
+        <!-- 大事紀要 end -->
+
+        <!-- 榮耀與肯定 -->
+        <div
+          class="tab-pane fade"
+          id="honor"
+          role="tabpanel"
+          aria-labelledby="honor-tab"
+        >
+        <div class="page-banner">
+            <div class="page-banner_inner">
+              <div class="container">
+                <div class="page-banner_content">
+                  <img src="./public/img/aboout_pic_5.png" alt="" />
+                  <h2>東森集團 發展歷程</h2>
+                  <p>
+                    東森是一個走在未來的團隊，總是不斷挑戰新舞台，打造新目標，也總能一次次掌握趨勢，創新價值，爲企業的發展找到永續的未來。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container py-80px">
+            <div class="honor-box mb-4">
+              <h3>東森國際</h3>
+              <ul>
+                <li>
+                  2014年：天下雜誌2000千大服務業排名第117名(貿易類排名第3名)
+                </li>
+                <li>
+                  2015年：天下雜誌2000千大服務業排名第123名(貿易類排名第3名)
+                </li>
+                <li>2014年：繼續取得經濟部工業局核發營運總部認定函</li>
+                <li>
+                  2016年：天下雜誌2000大服務業排名第131名(貿易類排名第3名)
+                </li>
+              </ul>
+            </div>
+            <div class="honor-box mb-4">
+              <h3>東森購物</h3>
+              <ul>
+                <li>2014年：天下雜誌500大服務業第182名</li>
+                <li>
+                  2014年：《易普索民調》整體滿意度達95%，客服態度滿意度達97%
+                </li>
+                <li>22015年：天下雜誌500大服務業第166名</li>
+                <li>2015年：獲頒「電子發票績優營業人獎」</li>
+                <li>
+                  2016年：獲頒工商時報「卓越服務獎」購物網站類第2名壹週刊『第13屆服務第壹大獎』
+                </li>
+                <li>
+                  2017年：工商時報「臺灣服務業大評鑑」購物網路銀牌獎經濟部電子商務網站E-21金網獎
+                </li>
+                <li>
+                  2018年：工商時報「2018臺灣服務業大評鑑」購物網站金牌獎遠見五星服務獎購物網站類第一名
+                </li>
+                <li>
+                  2019年：壹週刊『第16屆服務第壹大獎』工商時報『2019臺灣服務業大評鑑』購物網站金牌獎『SNQ
+                  國家品質標章認證』
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- 榮耀與肯定 end -->
+      </div>
+    </main>
+    <footer>
+      <div class="position-relative">
+        <div class="bg-style">
+          <img class="w-100" src="./public/img/common-style.png" alt="" />
+          <div class="w-100 bg"></div>
+        </div>
+        <div class="content">
+          <div class="bg"></div>
+          <div class="row">
+            <div class="col-md-8 left">
+              <div class="row">
+                <img src="./public/img/logo.png" alt="" class="mobile-logo" />
+                <div class="footer-list col-md-3 col-4">
+                  <h5 class="footer-title">
+                    最新消息<img
+                      class="plus d-md-none d-inline-block"
+                      src="./public/img/plus-solid.svg"
+                      alt=""
+                    />
+                  </h5>
+                  <ul>
+                    <li><a href="#">新連鎖快訊</a></li>
+                    <li><a href="#">行事曆</a></li>
+                  </ul>
+                </div>
+                <div class="footer-list col-md-3 col-4 d-md-block d-none">
+                  <h5 class="footer-title">商品</h5>
+                  <ul>
+                    <li><a href="#">營養保健</a></li>
+                    <li><a href="#">家用品</a></li>
+                    <li><a href="#">美容保養</a></li>
+                  </ul>
+                </div>
+                <div class="footer-list col-md-3 col-4 d-md-block d-none">
+                  <h5 class="footer-title">成功故事</h5>
+                  <ul>
+                    <li><a href="#">皇冠級經銷商</a></li>
+                    <li><a href="#">鑽石級經銷商</a></li>
+                  </ul>
+                </div>
+                <div class="footer-list col-md-3 col-4 d-md-block d-none">
+                  <h5 class="footer-title">精彩影音</h5>
+                  <ul>
+                    <li><a href="#">影片</a></li>
+                    <li><a href="#">照片</a></li>
+                  </ul>
+                </div>
+                <div class="footer-list col-md-3 col-4">
+                  <h5 class="footer-title">
+                    問答集<img
+                      class="plus d-md-none d-inline-block"
+                      src="./public/img/plus-solid.svg"
+                      alt=""
+                    />
+                  </h5>
+                  <ul>
+                    <li><a href="#">常見問題</a></li>
+                    <li><a href="#">商品相關</a></li>
+                    <li><a href="#">事業機會相關</a></li>
+                    <li><a href="#">券集商城＆票券館</a></li>
+                  </ul>
+                </div>
+                <div class="footer-list col-md-3 col-4">
+                  <h5 class="footer-title">
+                    聯絡我們<img
+                      class="plus d-md-none d-inline-block"
+                      src="./public/img/plus-solid.svg"
+                      alt=""
+                    />
+                  </h5>
+                  <ul>
+                    <li><a href="#">聯繫專員</a></li>
+                    <li><a href="#">服務據點</a></li>
+                    <li><a href="#">線上表單</a></li>
+                  </ul>
+                </div>
+                <div class="footer-list col-md-3 col-4 d-md-block d-none">
+                  <h5 class="footer-title">會員登入</h5>
+                </div>
+                <div class="footer-list col-md-3 col-4 d-md-none d-block">
+                  <h5 class="footer-title">
+                    服務據點<img
+                      class="plus d-md-none d-inline-block"
+                      src="./public/img/plus-solid.svg"
+                      alt=""
+                    />
+                  </h5>
+                </div>
+                <div class="footer-list col-md-3 col-4 d-md-none d-block">
+                  <h5 class="footer-title">
+                    商<span class="me-3"></span> 品<img
+                      class="plus d-md-none d-inline-block"
+                      src="./public/img/plus-solid.svg"
+                      alt=""
+                    />
+                  </h5>
+                  <ul>
+                    <li><a href="#">營養保健</a></li>
+                    <li><a href="#">家用品</a></li>
+                    <li><a href="#">美容保養</a></li>
+                  </ul>
+                </div>
+                <div class="footer-list col-md-3 col-4 d-md-none d-block">
+                  <h5 class="footer-title">會員專區</h5>
+                </div>
+                <div class="footer-list col-12 join">
+                  <h5 class="footer-title">加入東森社群</h5>
+                  <div class="icon">
+                    <a href="#"
+                      ><img src="./public/img/icon-circle-fb.png" alt=""
+                    /></a>
+                    <a href="#"
+                      ><img src="./public/img/icon-circle-line.png" alt=""
+                    /></a>
+                    <a href="#"
+                      ><img src="./public/img/icon-circle-youku.png" alt=""
+                    /></a>
+                    <a href="#"
+                      ><img src="./public/img/icon-circle-youtube.png" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 right pt-5">
+              <!-- <div class="link">
+                <a href="#">服務據點</a>
+                <span>|</span>
+                <a href="#">行事曆</a>
+              </div> -->
+              <img class="logo" src="./public/img/logo.png" alt="" />
+              <button class="user"><a href="#">會員專區</a></button>
+            </div>
+            <div class="col-12 copyright">
+              <p>©2019 Eastern Commerce Company 東森直消電商版權所有</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- js -->
+    <script src="./public/js/jquery/jquery.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/swiper/swiper-bundle.min.js"></script>
+    <script src="./public/js/index.js"></script>
+  </body>
+</html>

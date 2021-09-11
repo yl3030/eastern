@@ -1,0 +1,39 @@
+.story-box {
+    span {
+        color: #7E7E7E;
+        font-size: 14px;
+        margin-bottom: 3px;
+    }
+    h2 {
+        color: $second-color;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    &_inner {
+        margin-bottom: 35px;
+        h3 {
+            color: $main-color;
+            font-size: 18px;
+            margin-bottom: 3px;
+        }
+        p {
+            margin: 0;
+            line-height: 1.8;
+        }
+        a {
+            display: block;
+            padding-left: 20px;
+            line-height: 2;
+            position: relative;
+            text-decoration: underline;
+            &::before {
+                content: "-";
+                position: absolute;
+                top: 50%;
+                left: 0px;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}

@@ -1,0 +1,130 @@
+.group-box {
+  padding: 23px 45px;
+  background-color: #fff;
+  height: 100%;
+  h4 {
+    font-size: 18px;
+    color: $main-color;
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+  h5 {
+    color: $second-color;
+    font-size: 15px;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  ul {
+    li {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 24px;
+    }
+  }
+}
+
+.year-box {
+  display: flex;
+  justify-content: space-between;
+  .year-content {
+    width: calc(50% - 40px);
+    padding: 20px 15px;
+    transform: translateY(-20px);
+    transition: 0.3s;
+    h3 {
+      font-weight: 600;
+      font-size: 22px;
+      color: $main-color;
+      border-bottom: 1px solid $second-color;
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      width: 100%;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      li {
+        line-height: 30px;
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 13px;
+      height: 25px;
+      background-image: url(../img/right_chevron_icon-gray.svg);
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      top: 20px;
+    }
+    &:hover {
+      background-color: #fff;
+      box-shadow: -4px 2px 7px rgba(0, 0, 0, 0.0656141);
+      &::before {
+        background-image: none;
+        border: 10px solid;
+        border-color: transparent transparent transparent #fff;
+        filter: drop-shadow(-4px 2px 7px rgba(0, 0, 0, 0.0656141));
+      }
+    }
+  }
+  .dot-box {
+    width: 20px;
+    .dot {
+      border: 2px solid $main-color;
+      width: 20px;
+      height: 20px;
+      background-color: #f8f8f8;
+    }
+    .line {
+      width: 2px;
+      height: 100%;
+      background-color: $main-color;
+      margin: 0 auto;
+    }
+  }
+  &:nth-child(odd) {
+    .year-content {
+      position: relative;
+      &::before {
+        left: calc(100% + 2px);
+      }
+      &:hover {
+        &::before {
+          left: 100%;
+        }
+      }
+    }
+  }
+  &:nth-child(even) {
+    .year-content {
+      position: relative;
+      &::before {
+        right: calc(100% + 2px);
+        transform: scaleX(-1);
+      }
+      &:hover {
+        &::before {
+          right: 100%;
+        }
+      }
+    }
+  }
+}
+
+.honor-box {
+    background-color: #fff;
+    padding: 23px 33px;
+    h3 {
+        color: $main-color;
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+    ul {
+        li {
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+    }
+}

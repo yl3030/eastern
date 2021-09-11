@@ -10,10 +10,26 @@ $(document).click(function (event) {
       }
     }
 });
+$(".lang").children(".arrow").click(function(){
+  console.log("click");
+  $(this).toggleClass("active");
+  $(this).parents(".lang").children(".choose-box").children(".inner").toggleClass("active")
+})
+
+// search
+$(".search-btn").click(function(){
+  $(this).parents(".search-box").toggleClass("active");
+})
 
 $(".footer-list .footer-title").click(function(){
     if($(window).width()<576){
         $(this).toggleClass("active");
         $(this).parents(".footer-list").children("ul").slideToggle(300);
     }
+})
+
+// main card
+$(".card_arrow").click(function(){
+  $(this).parents(".hide-box").children(".hide-content").slideToggle(300);
+  $(this).toggleClass("active");
 })
