@@ -33,3 +33,9 @@ $(".card_arrow").click(function(){
   $(this).parents(".hide-box").children(".hide-content").slideToggle(300);
   $(this).toggleClass("active");
 })
+
+// list
+$(".plus-icon").click(function(){
+  $(this).toggleClass("active");
+  $(this).parents(".main-list_box").children(".hide-box").slideToggle(200);
+})
