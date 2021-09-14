@@ -76,3 +76,28 @@
         }
     }
 }
+
+@media screen and (max-width:767px) {
+    .contact-form {
+        padding: 20px 20px 0;
+        input,textarea {
+            padding: 10px 15px;
+        }
+        .vertify {
+            input {
+                width: 100px;
+            }
+        }
+        .vertify_pic {
+            height: 35px;
+        }
+    }
+    .map-outer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .store-box {
+        width: calc(100% - 100px);
+        margin: 20px auto;
+    }
+}

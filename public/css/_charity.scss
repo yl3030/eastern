@@ -28,3 +28,12 @@
         }
     }
 }
+
+@media screen and (max-width:767px) {
+    .article-cotent {
+        padding: 0 20px;
+        .pic-box {
+            width: 100%;
+        }
+    } 
+}

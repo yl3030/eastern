@@ -21,15 +21,6 @@
 
 .main-pic {
   overflow: hidden;
-  // >div{
-  //     margin-bottom: 50px;
-  //     &:nth-child(3n+1) {
-  //         padding-left: 0;
-  //     }
-  //     &:nth-child(3n) {
-  //         padding-right: 0;
-  //     }
-  // }
   &_inner {
     width: 100%;
     padding-bottom: 100%;
@@ -47,14 +38,16 @@
 .modal-pic {
   &_dialog {
     margin: 70px auto 30px;
+    max-width: 1000px;
     .modal-body {
       position: relative;
+      padding: 0;
       .modal_arrow {
         position: absolute;
         width: 20px;
         top: 50%;
         transform: translateY(-50%);
-        opacity: 0.5;
+        // opacity: 0.5;
         cursor: pointer;
         &.prev {
             left: -30px;
@@ -67,6 +60,7 @@
     }
     .modal-content {
       border: 0;
+      background-color: transparent;
     }
     .modal-footer {
         border: 0;
@@ -102,6 +96,24 @@
     }
   }
   
+}
+
+@media screen and (max-width: 767px) {
+  .video-box {
+    margin-bottom: 35px;
+    h3 {
+      font-size: 20px;
+    }
+  }
+  .modal-pic_dialog {
+    width: calc(100% - 80px);
+    margin-top: 150px;
+    .modal-body {
+      .modal_arrow{ 
+        width: 15px;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 576px) {

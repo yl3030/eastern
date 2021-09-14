@@ -142,3 +142,18 @@
         width: 100%;
     }
 }
+
+@media screen and (max-width:767px) {
+  .product-banner {
+    padding-bottom: 50%;
+    .text {
+      h2 {
+        font-size: 18px;
+      }
+    }
+  }
+  .product-inform {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+}

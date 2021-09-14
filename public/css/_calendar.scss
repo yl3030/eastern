@@ -83,3 +83,9 @@
     border-color:$main-color;
     text-align: center;
 }
+
+@media screen and (max-width:767px) {
+    .calendar-box {
+        padding:80px 0;
+    }
+}

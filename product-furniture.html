@@ -16,43 +16,50 @@
       <img class="logo" src="./public/img/logo.png" alt="" />
       <ul class="content">
         <li class="item">
-          <h5 class="menu-title"><a>商品情報</a></h5>
+          <h5 class="menu-title"><a>走進新連鎖</a></h5>
           <ul>
-            <li class="active"><a href="#">營養保健</a></li>
-            <li><a href="#">家用品</a></li>
-            <li><a href="#">美容保養</a></li>
+            <li><a href="./about.html">關於東森</a></li>
+            <li><a href="./know.html">認識新連鎖</a></li>
+            <li><a href="./leader.html">卓越領導團隊</a></li>
+            <li><a href="./expert.html">專家顧問群</a></li>
           </ul>
         </li>
         <li class="item">
-          <h5 class="menu-title"><a href="#">最新消息</a></h5>
+          <h5 class="menu-title"><a href="./new.html">最新消息</a></h5>
         </li>
         <li class="item">
           <h5 class="menu-title"><a>商品情報</a></h5>
           <ul>
-            <li><a href="#">保健</a></li>
-            <li><a href="#">家用品</a></li>
-            <li><a href="#">美容保養</a></li>
+            <li><a href="./product-health.html">保健</a></li>
+            <li><a href="./product-furniture.html">家用品</a></li>
+            <li><a href="./product-beauty.html">美容保養</a></li>
           </ul>
         </li>
         <li class="item">
           <h5 class="menu-title"><a>成功故事</a></h5>
           <ul>
-            <li><a href="#">皇冠級經銷商</a></li>
-            <li><a href="#">鑽石級經銷商</a></li>
+            <li><a href="./story.html">皇冠級經銷商</a></li>
+            <li><a href="./story.html">鑽石級經銷商</a></li>
           </ul>
         </li>
         <li class="item">
           <h5 class="menu-title"><a>精彩影音</a></h5>
           <ul>
-            <li><a href="#">影片欣賞</a></li>
-            <li><a href="#">相簿特輯</a></li>
+            <li><a href="./video.html">影片欣賞</a></li>
+            <li><a href="./album.html">相簿特輯</a></li>
           </ul>
         </li>
         <li class="item">
-          <h5 class="menu-title"><a href="#">問答集</a></h5>
+          <h5 class="menu-title"><a href="./QA_product.html">問答集</a></h5>
         </li>
         <li class="item">
-          <h5 class="menu-title"><a href="#">全球據點</a></h5>
+          <h5 class="menu-title"><a href="./earth.html">全球據點</a></h5>
+        </li>
+        <li class="item">
+          <h5 class="menu-title"><a href="./charity.html">社會公益</a></h5>
+        </li>
+        <li class="item">
+          <h5 class="menu-title"><a href="./contact.html">聯絡我們</a></h5>
         </li>
         <li class="item">
           <h5 class="menu-title"><a href="#">會員登入</a></h5>
@@ -102,41 +109,60 @@
       <h1 class="page-title">商品情報</h1>
       <nav class="page-nav">
         <ul>
-            <li><a href="#">營養保健</a></li>
-            <li class="active"><a href="#">家用品</a></li>
-            <li><a href="#">美容保養</a></li>
+            <li><a href="./product-health.html">營養保健</a></li>
+            <li class="active"><a href="./product-furniture.html">家用品</a></li>
+            <li><a href="./product-beauty.html">美容保養</a></li>
         </ul>
       </nav>
-      <ul class="nav nav-tabs page-tab" id="productTab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link active"
-            id="newest-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#newest"
-            type="button"
-            role="tab"
-            aria-controls="newest"
-            aria-selected="true"
-          >
-            最新
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link"
-            id="hot-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#hot"
-            type="button"
-            role="tab"
-            aria-controls="hot"
-            aria-selected="false"
-          >
-            熱門
-          </button>
-        </li>
-      </ul>
+      <div
+        class="
+          page-tab-mobile
+          d-md-none
+          d-flex
+          align-items-center
+          rounded-pill
+          bg-third
+          py-3
+          px-5
+          mb-5
+        "
+      >
+        <span class="mobile-tab-title"></span>
+        <img class="ms-4" src="./public/img/arrow-red.svg" alt="" />
+      </div>
+      <div class="page-tab-box">
+        <div class="page-tab-bg"></div>
+        <ul class="nav nav-tabs page-tab" id="productTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="newest-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#newest"
+              type="button"
+              role="tab"
+              aria-controls="newest"
+              aria-selected="true"
+            >
+              最新
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="hot-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#hot"
+              type="button"
+              role="tab"
+              aria-controls="hot"
+              aria-selected="false"
+            >
+              熱門
+            </button>
+          </li>
+        </ul>
+      </div>
 
       <div class="product-banner product-banner-furniture">
         <div class="product-banner_mask"></div>
@@ -154,9 +180,9 @@
           role="tabpanel"
           aria-labelledby="newest-tab"
         >
-          <div class="container">
+          <div class="container px-0 overflow-hidden">
             <div class="row pb-80px">
-              <div class="col-4">
+              <div class="col-md-4 col-6">
                 <div class="product-box">
                   <div class="pic">
                     <img src="./public/img/product_1.png" alt="" />
@@ -164,11 +190,11 @@
                   <div class="text">
                     <h4>極地雪玫瑰乳霜(30g/罐)</h4>
                     <p class="number">T614-1</p>
-                    <a href="#">SHOP</a>
+                    <a href="./product_content.html">SHOP</a>
                   </div>
                 </div>
               </div>
-              <div class="col-4">
+              <div class="col-md-4 col-6">
                 <div class="product-box">
                   <div class="pic">
                     <img src="./public/img/product_2.png" alt="" />
@@ -176,11 +202,11 @@
                   <div class="text">
                     <h4>極地雪玫瑰精萃(30ml/瓶)</h4>
                     <p class="number">T612-1</p>
-                    <a href="#">SHOP</a>
+                    <a href="./product_content.html">SHOP</a>
                   </div>
                 </div>
               </div>
-              <div class="col-4">
+              <div class="col-md-4 col-6">
                 <div class="product-box">
                   <div class="pic">
                     <img src="./public/img/product_3.png" alt="" />
@@ -188,11 +214,11 @@
                   <div class="text">
                     <h4>ANGELITA淨白全效DD霜</h4>
                     <p class="number">AN005</p>
-                    <a href="#">SHOP</a>
+                    <a href="./product_content.html">SHOP</a>
                   </div>
                 </div>
               </div>
-              <div class="col-4">
+              <div class="col-md-4 col-6">
                 <div class="product-box">
                   <div class="pic">
                     <img src="./public/img/product_4.png" alt="" />
@@ -200,11 +226,11 @@
                   <div class="text">
                     <h4>極地雪玫瑰凝霜(30g/罐)</h4>
                     <p class="number">T613-1</p>
-                    <a href="#">SHOP</a>
+                    <a href="./product_content.html">SHOP</a>
                   </div>
                 </div>
               </div>
-              <div class="col-4">
+              <div class="col-md-4 col-6">
                 <div class="product-box">
                   <div class="pic">
                     <img src="./public/img/product_1.png" alt="" />
@@ -212,11 +238,11 @@
                   <div class="text">
                     <h4>極地雪玫瑰乳霜(30g/罐)</h4>
                     <p class="number">T614-1</p>
-                    <a href="#">SHOP</a>
+                    <a href="./product_content.html">SHOP</a>
                   </div>
                 </div>
               </div>
-              <div class="col-4">
+              <div class="col-md-4 col-6">
                 <div class="product-box">
                   <div class="pic">
                     <img src="./public/img/product_2.png" alt="" />
@@ -224,11 +250,11 @@
                   <div class="text">
                     <h4>極地雪玫瑰精萃(30ml/瓶)</h4>
                     <p class="number">T612-1</p>
-                    <a href="#">SHOP</a>
+                    <a href="./product_content.html">SHOP</a>
                   </div>
                 </div>
               </div>
-              <div class="col-4">
+              <div class="col-md-4 col-6">
                 <div class="product-box">
                   <div class="pic">
                     <img src="./public/img/product_3.png" alt="" />
@@ -236,11 +262,11 @@
                   <div class="text">
                     <h4>ANGELITA淨白全效DD霜</h4>
                     <p class="number">AN005</p>
-                    <a href="#">SHOP</a>
+                    <a href="./product_content.html">SHOP</a>
                   </div>
                 </div>
               </div>
-              <div class="col-4">
+              <div class="col-md-4 col-6">
                 <div class="product-box">
                   <div class="pic">
                     <img src="./public/img/product_4.png" alt="" />
@@ -248,11 +274,11 @@
                   <div class="text">
                     <h4>極地雪玫瑰凝霜(30g/罐)</h4>
                     <p class="number">T613-1</p>
-                    <a href="#">SHOP</a>
+                    <a href="./product_content.html">SHOP</a>
                   </div>
                 </div>
               </div>
-              <div class="col-4">
+              <div class="col-md-4 col-6">
                 <div class="product-box">
                   <div class="pic">
                     <img src="./public/img/product_4.png" alt="" />
@@ -260,7 +286,7 @@
                   <div class="text">
                     <h4>極地雪玫瑰凝霜(30g/罐)</h4>
                     <p class="number">T613-1</p>
-                    <a href="#">SHOP</a>
+                    <a href="./product_content.html">SHOP</a>
                   </div>
                 </div>
               </div>
@@ -276,9 +302,9 @@
           role="tabpanel"
           aria-labelledby="hot-tab"
         >
-          <div class="container">
+          <div class="container px-0 overflow-hidden">
             <div class="row pb-80px">
-              <div class="col-4">
+              <div class="col-md-4 col-6">
                 <div class="product-box">
                   <div class="pic">
                     <img src="./public/img/product_1.png" alt="" />
@@ -286,11 +312,11 @@
                   <div class="text">
                     <h4>極地雪玫瑰乳霜(30g/罐)</h4>
                     <p class="number">T614-1</p>
-                    <a href="#">SHOP</a>
+                    <a href="./product_content.html">SHOP</a>
                   </div>
                 </div>
               </div>
-              <div class="col-4">
+              <div class="col-md-4 col-6">
                 <div class="product-box">
                   <div class="pic">
                     <img src="./public/img/product_2.png" alt="" />
@@ -298,11 +324,11 @@
                   <div class="text">
                     <h4>極地雪玫瑰精萃(30ml/瓶)</h4>
                     <p class="number">T612-1</p>
-                    <a href="#">SHOP</a>
+                    <a href="./product_content.html">SHOP</a>
                   </div>
                 </div>
               </div>
-              <div class="col-4">
+              <div class="col-md-4 col-6">
                 <div class="product-box">
                   <div class="pic">
                     <img src="./public/img/product_3.png" alt="" />
@@ -310,11 +336,11 @@
                   <div class="text">
                     <h4>ANGELITA淨白全效DD霜</h4>
                     <p class="number">AN005</p>
-                    <a href="#">SHOP</a>
+                    <a href="./product_content.html">SHOP</a>
                   </div>
                 </div>
               </div>
-              <div class="col-4">
+              <div class="col-md-4 col-6">
                 <div class="product-box">
                   <div class="pic">
                     <img src="./public/img/product_4.png" alt="" />
@@ -322,11 +348,11 @@
                   <div class="text">
                     <h4>極地雪玫瑰凝霜(30g/罐)</h4>
                     <p class="number">T613-1</p>
-                    <a href="#">SHOP</a>
+                    <a href="./product_content.html">SHOP</a>
                   </div>
                 </div>
               </div>
-              <div class="col-4">
+              <div class="col-md-4 col-6">
                 <div class="product-box">
                   <div class="pic">
                     <img src="./public/img/product_1.png" alt="" />
@@ -334,11 +360,11 @@
                   <div class="text">
                     <h4>極地雪玫瑰乳霜(30g/罐)</h4>
                     <p class="number">T614-1</p>
-                    <a href="#">SHOP</a>
+                    <a href="./product_content.html">SHOP</a>
                   </div>
                 </div>
               </div>
-              <div class="col-4">
+              <div class="col-md-4 col-6">
                 <div class="product-box">
                   <div class="pic">
                     <img src="./public/img/product_2.png" alt="" />
@@ -346,11 +372,11 @@
                   <div class="text">
                     <h4>極地雪玫瑰精萃(30ml/瓶)</h4>
                     <p class="number">T612-1</p>
-                    <a href="#">SHOP</a>
+                    <a href="./product_content.html">SHOP</a>
                   </div>
                 </div>
               </div>
-              <div class="col-4">
+              <div class="col-md-4 col-6">
                 <div class="product-box">
                   <div class="pic">
                     <img src="./public/img/product_3.png" alt="" />
@@ -358,11 +384,11 @@
                   <div class="text">
                     <h4>ANGELITA淨白全效DD霜</h4>
                     <p class="number">AN005</p>
-                    <a href="#">SHOP</a>
+                    <a href="./product_content.html">SHOP</a>
                   </div>
                 </div>
               </div>
-              <div class="col-4">
+              <div class="col-md-4 col-6">
                 <div class="product-box">
                   <div class="pic">
                     <img src="./public/img/product_4.png" alt="" />
@@ -370,11 +396,11 @@
                   <div class="text">
                     <h4>極地雪玫瑰凝霜(30g/罐)</h4>
                     <p class="number">T613-1</p>
-                    <a href="#">SHOP</a>
+                    <a href="./product_content.html">SHOP</a>
                   </div>
                 </div>
               </div>
-              <div class="col-4">
+              <div class="col-md-4 col-6">
                 <div class="product-box">
                   <div class="pic">
                     <img src="./public/img/product_4.png" alt="" />
@@ -382,7 +408,7 @@
                   <div class="text">
                     <h4>極地雪玫瑰凝霜(30g/罐)</h4>
                     <p class="number">T613-1</p>
-                    <a href="#">SHOP</a>
+                    <a href="./product_content.html">SHOP</a>
                   </div>
                 </div>
               </div>
@@ -396,8 +422,9 @@
       <div class="content">
         <div class="row">
           <div class="col-md-8 left">
+            <img src="./public/img/logo.png" alt="" class="mobile-logo" />
+            <!-- <img class="mobile-logo" src="./public/img/logo.png" alt=""> -->
             <div class="row">
-              <img src="./public/img/logo.png" alt="" class="mobile-logo" />
               <div class="footer-list col-md-3 col-4">
                 <h5 class="footer-title">
                   最新消息<img
