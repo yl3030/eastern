@@ -1,5 +1,8 @@
 // menu
-$(".menu-icon").click(function () {
+// $(".menu-icon").click(function () {
+//   $(".menu").addClass("active");
+// });
+$(".menu-icon").mouseenter(function () {
   $(".menu").addClass("active");
 });
 $(document).click(function (event) {
@@ -21,9 +24,9 @@ $(".menu-title").mouseenter(function () {
     $(this).parents(".item").children("ul").slideDown(300);
   }
 });
-$(".menu-title").mouseleave(function () {
+$(".item").mouseleave(function () {
   if($(window).width()>=768){
-    $(this).parents(".item").children("ul").hide();
+    $(this).children("ul").hide();
   }
 });
 $(".lang")

@@ -14,3 +14,11 @@
         }
     }
 }
+
+@media screen and(max-width:767px) {
+    .earth-tab {
+        .nav-link {
+            font-size: 14px;
+        }
+    } 
+}

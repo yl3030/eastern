@@ -2,7 +2,7 @@
     h2 {
         font-size: 24px;
         font-weight: 700;
-        color: $main-color;
+        // color: $main-color;
         margin-bottom: 30px;
         line-height: 1.6;
     }
@@ -34,6 +34,17 @@
         padding: 0 20px;
         .pic-box {
             width: 100%;
+        }
+        p {
+            font-size: 14px;
+        }
+    } 
+    .article-banner {
+        h2 {
+            font-size: 22px;
+        }
+        p {
+            font-size: 14px;
         }
     } 
 }

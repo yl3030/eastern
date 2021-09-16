@@ -12,11 +12,34 @@
     <link rel="stylesheet" href="./public/css/style.css" />
   </head>
   <style>
-    main{
+    main {
       padding: 0;
     }
   </style>
   <body>
+    <div
+      class="modal fade"
+      id="biulding"
+      tabindex="-1"
+      aria-labelledby="biuldingLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header border-0"></div>
+          <div class="modal-body text-center">頁面架設中</div>
+          <div class="modal-footer border-0">
+            <button
+              type="button"
+              class="btn btn-secondary d-block mx-auto bg-second border-0"
+              data-bs-dismiss="modal"
+            >
+              確定
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="menu">
       <img class="logo" src="./public/img/logo.png" alt="" />
       <ul class="content">
@@ -67,7 +90,7 @@
           <h5 class="menu-title"><a href="./contact.html">聯絡我們</a></h5>
         </li>
         <li class="item">
-          <h5 class="menu-title"><a href="#">會員登入</a></h5>
+          <h5 class="menu-title"><a href="#" data-bs-toggle="modal" data-bs-target="#biulding">會員登入</a></h5>
         </li>
       </ul>
       <button class="lang py-2">
@@ -77,10 +100,10 @@
             <div class="d-inline-flex align-items-center">
               <span class="active choose-tab">TW</span>
               <div class="d-inline-flex align-items-center me-2">
-                <span class="mx-1">|</span><span class="choose-tab">CN</span>
-                <span class="mx-1">|</span><span class="choose-tab">EN</span>
-                <span class="mx-1">|</span><span class="choose-tab">VN</span>
-                <span class="mx-1">|</span><span class="choose-tab">HK</span>
+                <span class="mx-1">|</span
+                ><span class="choose-tab"><a href="#">CN</a></span>
+                <span class="mx-1">|</span
+                ><span class="choose-tab"><a href="#">EN</a></span>
               </div>
             </div>
           </div>
@@ -100,21 +123,25 @@
         </div>
       </div>
       <div class="right">
-        <a href="#"><img src="./public/img/user_icon.svg" alt="" /></a>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#biulding"
+          ><img src="./public/img/user_icon.svg" alt=""
+        /></a>
         <a class="search-box">
           <div class="inner">
-            <form action=""><input type="text" placeholder="Search"></form>
+            <form action=""><input type="text" placeholder="Search" /></form>
           </div>
           <img class="search-btn" src="./public/img/search_icon.svg" alt="" />
         </a>
-        <a href="#"><img src="./public/img/map_pin_icon.svg" alt="" /></a>
+        <a href="./contact.html"
+          ><img src="./public/img/map_pin_icon.svg" alt=""
+        /></a>
       </div>
     </header>
     <main>
       <div class="swiper-container" id="banner">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <video autoplay="" playsinline>
+            <video muted="false" autoplay="" loop playsinline>
               <source src="./public/img/banner.mp4" type="video/mp4" />
             </video>
           </div>
@@ -202,9 +229,11 @@
               我們將竭盡全力，為各位擘劃美夢成真的人生。<br />
             </p>
           </div>
-          <button class="more"><a href="./story.html">
-            <span class="white">了解更多</span
-            ><img src="./public/img/right_arrow_icon.svg" alt="" /></a>
+          <button class="more">
+            <a href="./story.html">
+              <span class="white">了解更多</span
+              ><img src="./public/img/right_arrow_icon.svg" alt=""
+            /></a>
           </button>
         </div>
       </div>
@@ -292,9 +321,11 @@
             <div class="row">
               <div class="col-6">
                 <div class="product-box">
-                  <div class="pic">
-                    <img src="./public/img/product_1.png" alt="" />
-                  </div>
+                  <a href="./product_content.html">
+                    <div class="pic">
+                      <img src="./public/img/product_1.png" alt="" />
+                    </div>
+                  </a>
                   <div class="text">
                     <h4>極地雪玫瑰乳霜(30g/罐)</h4>
                     <p class="number">T614-1</p>
@@ -304,9 +335,11 @@
               </div>
               <div class="col-6">
                 <div class="product-box">
-                  <div class="pic">
-                    <img src="./public/img/product_2.png" alt="" />
-                  </div>
+                  <a href="./product_content.html">
+                    <div class="pic">
+                      <img src="./public/img/product_2.png" alt="" />
+                    </div>
+                  </a>
                   <div class="text">
                     <h4>極地雪玫瑰精萃(30ml/瓶)</h4>
                     <p class="number">T612-1</p>
@@ -316,9 +349,11 @@
               </div>
               <div class="col-6">
                 <div class="product-box">
-                  <div class="pic">
-                    <img src="./public/img/product_3.png" alt="" />
-                  </div>
+                  <a href="./product_content.html">
+                    <div class="pic">
+                      <img src="./public/img/product_3.png" alt="" />
+                    </div>
+                  </a>
                   <div class="text">
                     <h4>ANGELITA淨白全效DD霜</h4>
                     <p class="number">AN005</p>
@@ -328,9 +363,11 @@
               </div>
               <div class="col-6">
                 <div class="product-box">
-                  <div class="pic">
-                    <img src="./public/img/product_4.png" alt="" />
-                  </div>
+                  <a href="./product_content.html">
+                    <div class="pic">
+                      <img src="./public/img/product_4.png" alt="" />
+                    </div>
+                  </a>
                   <div class="text">
                     <h4>極地雪玫瑰凝霜(30g/罐)</h4>
                     <p class="number">T613-1</p>
@@ -340,145 +377,148 @@
               </div>
             </div>
           </div>
-          <button class="more"><a href="./product-beauty.html">
-            <span class="brown">更多商品</span
-            ><img src="./public/img/right_arrow_icon-brown.svg" alt="" />
-          </a>
+          <button class="more">
+            <a href="./product-beauty.html">
+              <span class="brown">更多商品</span
+              ><img src="./public/img/right_arrow_icon-brown.svg" alt="" />
+            </a>
           </button>
         </div>
       </div>
     </main>
     <footer>
-        <div class="content">
-          <div class="row">
-            <div class="col-md-8 left">
-              <img src="./public/img/logo.png" alt="" class="mobile-logo" />
-              <!-- <img class="mobile-logo" src="./public/img/logo.png" alt=""> -->
-              <div class="row">
-                <div class="footer-list col-md-3 col-4">
-                  <h5 class="footer-title">
-                    最新消息<img
-                      class="plus d-md-none d-inline-block"
-                      src="./public/img/plus-solid.svg"
-                      alt=""
-                    />
-                  </h5>
-                  <ul>
-                    <li><a href="#">新連鎖快訊</a></li>
-                    <li><a href="#">行事曆</a></li>
-                  </ul>
-                </div>
-                <div class="footer-list col-md-3 col-4 d-md-block d-none">
-                  <h5 class="footer-title">商品</h5>
-                  <ul>
-                    <li><a href="#">營養保健</a></li>
-                    <li><a href="#">家用品</a></li>
-                    <li><a href="#">美容保養</a></li>
-                  </ul>
-                </div>
-                <div class="footer-list col-md-3 col-4 d-md-block d-none">
-                  <h5 class="footer-title">成功故事</h5>
-                  <ul>
-                    <li><a href="#">皇冠級經銷商</a></li>
-                    <li><a href="#">鑽石級經銷商</a></li>
-                  </ul>
-                </div>
-                <div class="footer-list col-md-3 col-4 d-md-block d-none">
-                  <h5 class="footer-title">精彩影音</h5>
-                  <ul>
-                    <li><a href="#">影片</a></li>
-                    <li><a href="#">照片</a></li>
-                  </ul>
-                </div>
-                <div class="footer-list col-md-3 col-4">
-                  <h5 class="footer-title">
-                    問答集<img
-                      class="plus d-md-none d-inline-block"
-                      src="./public/img/plus-solid.svg"
-                      alt=""
-                    />
-                  </h5>
-                  <ul>
-                    <li><a href="#">常見問題</a></li>
-                    <li><a href="#">商品相關</a></li>
-                    <li><a href="#">事業機會相關</a></li>
-                    <li><a href="#">券集商城＆票券館</a></li>
-                  </ul>
-                </div>
-                <div class="footer-list col-md-3 col-4">
-                  <h5 class="footer-title">
-                    聯絡我們<img
-                      class="plus d-md-none d-inline-block"
-                      src="./public/img/plus-solid.svg"
-                      alt=""
-                    />
-                  </h5>
-                  <ul>
-                    <li><a href="#">聯繫專員</a></li>
-                    <li><a href="#">服務據點</a></li>
-                    <li><a href="#">線上表單</a></li>
-                  </ul>
-                </div>
-                <div class="footer-list col-md-3 col-4 d-md-block d-none">
-                  <h5 class="footer-title">會員登入</h5>
-                </div>
-                <div class="footer-list col-md-3 col-4 d-md-none d-block">
-                  <h5 class="footer-title">
-                    服務據點<img
-                      class="plus d-md-none d-inline-block"
-                      src="./public/img/plus-solid.svg"
-                      alt=""
-                    />
-                  </h5>
-                </div>
-                <div class="footer-list col-md-3 col-4 d-md-none d-block">
-                  <h5 class="footer-title">商<span class="me-3"></span> 品<img
+      <div class="content">
+        <div class="row">
+          <div class="col-md-8 left">
+            <img src="./public/img/logo.png" alt="" class="mobile-logo" />
+            <!-- <img class="mobile-logo" src="./public/img/logo.png" alt=""> -->
+            <div class="row">
+              <div class="footer-list col-md-3 col-4">
+                <h5 class="footer-title">
+                  最新消息<img
                     class="plus d-md-none d-inline-block"
                     src="./public/img/plus-solid.svg"
                     alt=""
-                  /></h5>
-                  <ul>
-                    <li><a href="#">營養保健</a></li>
-                    <li><a href="#">家用品</a></li>
-                    <li><a href="#">美容保養</a></li>
-                  </ul>
-                </div>
-                <div class="footer-list col-md-3 col-4 d-md-none d-block">
-                  <h5 class="footer-title">會員專區</h5>
-                </div>
-                <div class="footer-list col-12 join">
-                  <h5 class="footer-title">加入東森社群</h5>
-                  <div class="icon">
-                    <a href="#"
-                      ><img src="./public/img/icon-circle-fb.png" alt=""
-                    /></a>
-                    <a href="#"
-                      ><img src="./public/img/icon-circle-line.png" alt=""
-                    /></a>
-                    <a href="#"
-                      ><img src="./public/img/icon-circle-youku.png" alt=""
-                    /></a>
-                    <a href="#"
-                      ><img src="./public/img/icon-circle-youtube.png" alt=""
-                    /></a>
-                  </div>
+                  />
+                </h5>
+                <ul>
+                  <li><a href="./new.html">新連鎖快訊</a></li>
+                  <li><a href="./calendar.html">行事曆</a></li>
+                </ul>
+              </div>
+              <div class="footer-list col-md-3 col-4 d-md-block d-none">
+                <h5 class="footer-title">商品</h5>
+                <ul>
+                  <li><a href="./product-health.html">營養保健</a></li>
+                  <li><a href="./product-furniture.html">家用品</a></li>
+                  <li><a href="./product-health.html">美容保養</a></li>
+                </ul>
+              </div>
+              <div class="footer-list col-md-3 col-4 d-md-block d-none">
+                <h5 class="footer-title">成功故事</h5>
+                <ul>
+                  <li><a href="./story.html">皇冠級經銷商</a></li>
+                  <li><a href="./story.html">鑽石級經銷商</a></li>
+                </ul>
+              </div>
+              <div class="footer-list col-md-3 col-4 d-md-block d-none">
+                <h5 class="footer-title">精彩影音</h5>
+                <ul>
+                  <li><a href="./video.html">影片</a></li>
+                  <li><a href="./album.html">照片</a></li>
+                </ul>
+              </div>
+              <div class="footer-list col-md-3 col-4">
+                <h5 class="footer-title">
+                  問答集<img
+                    class="plus d-md-none d-inline-block"
+                    src="./public/img/plus-solid.svg"
+                    alt=""
+                  />
+                </h5>
+                <ul>
+                  <li><a href="./QA_product.html">常見問題</a></li>
+                  <li><a href="./QA_product.html">商品相關</a></li>
+                  <li><a href="./QA_product.html">事業機會相關</a></li>
+                  <li><a href="./QA_product.html">券集商城＆票券館</a></li>
+                </ul>
+              </div>
+              <div class="footer-list col-md-3 col-4">
+                <h5 class="footer-title">
+                  聯絡我們<img
+                    class="plus d-md-none d-inline-block"
+                    src="./public/img/plus-solid.svg"
+                    alt=""
+                  />
+                </h5>
+                <ul>
+                  <li><a href="./contact.html">聯繫專員</a></li>
+                  <li><a href="./place.html">服務據點</a></li>
+                  <li><a href="./download.html">線上表單</a></li>
+                </ul>
+              </div>
+              <div class="footer-list col-md-3 col-4 d-md-block d-none">
+                <h5 class="footer-title">會員登入</h5>
+              </div>
+              <div class="footer-list col-md-3 col-4 d-md-none d-block">
+                <h5 class="footer-title">
+                  服務據點<img
+                    class="plus d-md-none d-inline-block"
+                    src="./public/img/plus-solid.svg"
+                    alt=""
+                  />
+                </h5>
+              </div>
+              <div class="footer-list col-md-3 col-4 d-md-none d-block">
+                <h5 class="footer-title">
+                  商<span class="me-3"></span> 品<img
+                    class="plus d-md-none d-inline-block"
+                    src="./public/img/plus-solid.svg"
+                    alt=""
+                  />
+                </h5>
+                <ul>
+                  <li><a href="./product-health.html">營養保健</a></li>
+                  <li><a href="./product-furniture.html">家用品</a></li>
+                  <li><a href="./product-beauty.html">美容保養</a></li>
+                </ul>
+              </div>
+              <div class="footer-list col-md-3 col-4 d-md-none d-block">
+                <h5 class="footer-title">會員專區</h5>
+              </div>
+              <div class="footer-list col-12 join">
+                <h5 class="footer-title">加入東森社群</h5>
+                <div class="icon">
+                  <a href="#"
+                    ><img src="./public/img/icon-circle-fb.png" alt=""
+                  /></a>
+                  <a href="#"
+                    ><img src="./public/img/icon-circle-line.png" alt=""
+                  /></a>
+                  <a href="#"
+                    ><img src="./public/img/icon-circle-youku.png" alt=""
+                  /></a>
+                  <a href="#"
+                    ><img src="./public/img/icon-circle-youtube.png" alt=""
+                  /></a>
                 </div>
               </div>
             </div>
-            <div class="col-md-4 right pt-5">
-              <!-- <div class="link">
+          </div>
+          <div class="col-md-4 right pt-5">
+            <!-- <div class="link">
                 <a href="#">服務據點</a>
                 <span>|</span>
                 <a href="#">行事曆</a>
               </div> -->
-              <img class="logo" src="./public/img/logo.png" alt="" />
-              <button class="user"><a href="#">會員專區</a></button>
-            </div>
-            <div class="col-12 copyright">
-              <p>©2019 Eastern Commerce Company 東森直消電商版權所有</p>
-            </div>
+            <img class="logo" src="./public/img/logo.png" alt="" />
+            <button class="user"><a href="#">會員專區</a></button>
+          </div>
+          <div class="col-12 copyright">
+            <p>©2019 Eastern Commerce Company 東森直消電商版權所有</p>
           </div>
         </div>
+      </div>
     </footer>
     <!-- js -->
     <script src="./public/js/jquery/jquery.min.js"></script>
@@ -490,6 +530,10 @@
       var Bswiper = new Swiper("#banner", {
         slidesPerView: 1,
         loop: true,
+        // autoplay: {
+        //   delay: 3000,
+        //   disableOnInteraction: false,
+        // },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,

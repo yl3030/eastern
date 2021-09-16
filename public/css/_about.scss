@@ -15,6 +15,7 @@
     font-weight: 600;
   }
   ul {
+    margin-bottom: 0;
     li {
       font-weight: 500;
       font-size: 15px;
@@ -148,6 +149,41 @@
         display: block;
         opacity: 1 !important;
         width: calc(100% - 60px);
+      }
+      h3 {
+        font-size: 20px;
+      }
+      ul {
+        li {
+          font-size: 14px;
+        }
+      }
+    }
+  } 
+  .group-box {
+    padding: 20px;
+    h4 {
+      font-size: 16px;
+    }
+    h5 {
+      font-size: 14px;
+    }
+    ul {
+      li {
+        font-size: 14px;
+      }
+    }
+  } 
+  .honor-box {
+    padding: 20px;
+    h3 {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+    ul {
+      li {
+        font-size: 14px;
+        margin-bottom: 10px;
       }
     }
   } 

@@ -497,7 +497,7 @@ main {
       }
     }
     .card_arrow {
-      width: 12px;
+      width: 10px;
       transform: rotate(90deg);
       display: block;
       margin: 20px auto 0;
@@ -505,6 +505,23 @@ main {
       transition: 0.3s;
       &.active {
         transform: rotate(-90deg);
+      }
+    }
+  }
+  &-album {
+    overflow: hidden;
+    img {
+      transition: 0.3s;
+    }
+    .text {
+      padding-bottom: 10px;
+      h3 {
+        margin: 0;
+      }
+    }
+    &:hover {
+      img {
+        transform: scale(1.05);
       }
     }
   }
@@ -713,10 +730,12 @@ main {
     }
     .choose-box {
       overflow-x: hidden;
-      width: calc(100% - 12px);
+      // width: calc(100% - 12px);
+      width: 130px;
       .inner {
         padding-top: 3px;
-        margin-left: 145px;
+        // margin-left: 145px;
+        margin-left: 80px;
         width: 100%;
         transition: 0.3s;
         &.active {
@@ -1031,11 +1050,31 @@ footer {
   .pt-57px {
     padding-top: 150px;
   }
+  .common-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .common-text {
+    font-size: 14px;
+  }
+  .content-text {
+    h3 {
+      font-size: 22px;
+    }
+    h4 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  } 
   .page {
     &-title {
       text-align: right;
       padding: 0 20px;
       margin-bottom: 25px;
+      font-size: 20px;
     }
     &-tab {
       position: absolute;
@@ -1064,6 +1103,9 @@ footer {
       }
       &-mobile {
         display: block;
+        span {
+          font-size: 14px;
+        }
       }
       &-bg {
         display: block;
@@ -1092,9 +1134,11 @@ footer {
         transform: none;
         p {
           padding: 0 20px;
+          font-size: 14px;
         }
         h2 {
           padding: 0 20px;
+          font-size: 20px;
         }
       }
     }
@@ -1103,6 +1147,12 @@ footer {
     ul {
       justify-content: end;
       margin-bottom: 23px;
+      li {
+        margin: 0 15px 10px;
+        a {
+          font-size: 14px;
+        }
+      }
     }
   }
   .dealer {
@@ -1124,6 +1174,14 @@ footer {
       .dealer-intro {
         right: 0;
         top: -47px;
+        .name-box {
+          .title {
+            font-size: 14px;
+          }
+          .name {
+            font-size: 20px;
+          }
+        }
       }
     }
     .dealer-text {
@@ -1192,6 +1250,41 @@ footer {
       }
     }
   }
+  .main-card {
+    .text {
+      h3 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 14px;
+      }
+    } 
+    .hide-box {
+      .hide-content {
+        h4 {
+          font-size: 16px;
+        }
+        p {
+          font-size: 14px;
+        }
+      } 
+    } 
+  } 
+  .main-list_box {
+    span {
+      font-size: 15px;
+    }
+    .hide-box {
+      p {
+        font-size: 14px;
+      }
+    }
+  } 
+  .more {
+    span {
+      font-size: 14px;
+    }
+  } 
 }
 
 @media screen and (max-width: 575px) {
