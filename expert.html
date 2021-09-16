@@ -130,6 +130,7 @@
         <a href="./contact.html"
           ><img src="./public/img/map_pin_icon.svg" alt=""
         /></a>
+        <a href="#"><img src="./public/img/download_icon.svg" alt=""></a>
       </div>
     </header>
     <main>
@@ -363,5 +364,31 @@
     <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="./public/js/swiper/swiper-bundle.min.js"></script>
     <script src="./public/js/index.js"></script>
+    <script>
+      var Nswiper = new Swiper("#dealer-name", {
+        slidesPerView: 1,
+        loop: true,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+      });
+
+      var Dswiper = new Swiper("#dealer", {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          type: "progressbar",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: Nswiper,
+        },
+      });
+    </script>
   </body>
 </html>
